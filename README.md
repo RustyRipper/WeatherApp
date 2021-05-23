@@ -3,28 +3,28 @@ Project at the end of the first semester
 
 ## Instruction for the task
 
-/* Projekt meteorologiczny */
-/*
+/ * Meteorological project * /
+/ *
 
-1. Na Dolnym Śląsku, w różnych lokalizacach zostały rozmieszczone czujniki: temperatury, wilgotności i ciśnienia, które
-są sterowane z Centralnego Systemu Informatycznego. CSI pozwala na synchronizacę czujników i przeprowadzenie jednoczesnego pomiaru
-przez wszystkie z nich. Pomiar wielkości fizycznych odbywa się regularnie, co 5 sekund i jest automatycznie zapisywany
-w pamięci czujnika. Czujniki mogą być zintegrowane i mierzyć jednocześnie więcej niż jedną wielkość fizyczną.
-2. CSI nie tylko synchronizuje czujniki, ale pozwala na wyświetlenie wszystkich dostępnych lokalizacji, w których zostały
-rozmieszczone czujniki. Lista lokalizacji wraz z dostępnością czujnika może zostać przekazana w postaci obiektu lub w postaci JSON.
-np. Jelenia Góra TP (temperature/pressure) albo Jawor HP (humidity/pressure) itp.
-3. Mieszkańcy Dolnego Śląska mogą korzystać z aplikacji Katalog Uniwersalnych Pomiarów Asynchronicznych (w skr. KUPA),
-dostępny w domenie gov.gov/other-trash-without-any-specific-usability. Aplikacja pozwala na rejestrację użytkownika
-do określonej lokalizacji i notyfikacje o zmianach z subskrybowanego czujnika.
-4. Protokół komunikacyjny KUPA-CSI jest uniwersalny, tj. bez względu na ilość monitorowanych wielkości fizycznych, wiadomość wysyłana
-do odbiorcy jest zawsze obiektem, który zawiera wszystkie pola, tj. temperaturę, wilgotność i ciśnienie, co najwyżej
-przy niektórych polach wyświetla informację "niedostępne".
-5. W przypadku rejestracji jednego użytkownika do wielu czujników, aplikacja pozwala na wygodne gromadzenie wszystkich danych.
-6. Aplikacja pozwala na zapisanie wszystkich zgromadzonych danych w pliku .json
-7. Aplikaca oferue możliwość wykonania prostej analizy danych względem lokalizacji. Aktualnie oferowane są tylko opcje obliczania
-wartości średnich, minimum i maksimum.
-8. Użytkownik aplikacji może sprawdzić listę subskrybowanych lokalizacji, dodać nowe subskrypcje lub anulować je w dowolnym momencie.
+1. In Lower Silesia, sensors for temperature, humidity and pressure have been placed in various locations
+are controlled from the Central IT System. CSI allows you to synchronize sensors and carry out simultaneous measurement
+by all of them. Measurement of physical quantities takes place regularly, every 5 seconds and is automatically saved
+in the sensor memory. Sensors can be integrated and measure more than one physical quantity simultaneously.
+2. CSI not only synchronizes sensors, but allows you to view all available locations where they have been
+sensors arranged. The list of locations with the availability of the sensor can be provided in the form of an object or in the form of JSON.
+e.g. Jelenia Góra TP (temperature / pressure) or Jawor HP (humidity / pressure) etc.
+3. The inhabitants of Lower Silesia can use the Catalog of Asynchronous Measurements Catalog (in the box KUPA),
+available at gov.gov/other-trash-without-any-specific-usability. The application allows user registration
+to a specific location and notifications of changes from the subscribed sensor.
+4. The KUPA-CSI communication protocol is universal, i.e. regardless of the number of monitored physical quantities, the message sent
+to the recipient, it is always an object that contains all the fields, i.e. temperature, humidity and pressure, at most
+with some fields it displays "not available".
+5. In the case of registration of one user to many sensors, the application allows for convenient collection of all data.
+6. The application allows you to save all collected data in a .json file
+7. The applicant offers the possibility of performing a simple data analysis in relation to the location. Currently only calculation options are offered
+mean, minimum and maximum values.
+8. The application user can check the list of subscribed locations, add new subscriptions or cancel them at any time.
 
-Wymagania techniczne:
-- Pomiar danych odbywa się w wątku
-- Aplikacja posiada testy jednostkowe
+Technical requirements:
+- Data measurement is done in thread
+- The application has unit tests
